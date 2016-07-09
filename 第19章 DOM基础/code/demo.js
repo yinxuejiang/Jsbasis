@@ -1,3 +1,4 @@
+
 /*
 	节点分为三类：
 	1.元素节点：其实就是标签，<div></div>
@@ -51,14 +52,22 @@
 	如果有浏览器不支持，那么必须做兼容操作，或者尽可能不去使用
 */
 
-
 window.onload = function () {
-	var box = document.getElementById('box');
-	
+	// var box = document.getElementById('box');
+	// var box = document.querySelector("ul li");
+	// var box = document.querySelectorAll("ul li");
+	// // console.log(box[1].className);
+	// for (var i = 0; i < box.length; i++) {
+	// 	box[i].setAttribute("title", "title" + i)
+	// 	console.log(box[i].className + "         "+ box[i].getAttribute("title"));
+	// }
+	var box = document.querySelector("ul");
+	console.log(box.childNodes)
+	for (var i = 0; i < box.childNodes.length; i++) {
+		console.log(box.childNodes[i].nodeType);
+		
+	}
 };
-
-
-
 
 
 
